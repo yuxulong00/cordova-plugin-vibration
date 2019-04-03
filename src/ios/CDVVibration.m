@@ -23,7 +23,10 @@
 
 - (void)vibrate:(CDVInvokedUrlCommand*)command
 {
-    AudioServicesPlaySystemSound(1519);
+    // AudioServicesPlaySystemSound(1519);
+    UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleLight];
+       [generator prepare];
+       [generator impactOccurred];
 }
 
 @end
