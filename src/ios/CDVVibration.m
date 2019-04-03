@@ -23,7 +23,7 @@
 
 - (void)vibrate:(CDVInvokedUrlCommand*)command
 {
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    AudioServicesPlaySystemSound(1519);
 }
 
 @end
