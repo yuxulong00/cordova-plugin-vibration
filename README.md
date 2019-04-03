@@ -89,9 +89,10 @@ Calls to `navigator.vibrate` will immediately return `false` if user hasn't tapp
 
 #### iOS Quirks
 
-- __time__: Ignores the specified time and vibrates for a pre-set amount of time.
+- __time__: Now you can use params:1 to vibrate at a short time
 ```javascript
-navigator.vibrate(3000); // 3000 is ignored
+navigator.vibrate(1); // short vibrate
+navigator.vibrate(3000); // other number in params is ignore and vibrate by system setting
 ```
 #### Windows Quirks
 
